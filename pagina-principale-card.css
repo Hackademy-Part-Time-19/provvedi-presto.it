@@ -1,0 +1,83 @@
+.padre-cards{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: start;
+   background-color: black;
+   padding-left: 70px;
+   padding-right: 70px; 
+  
+   
+
+}
+
+.card{
+    height: 530px;
+    background: linear-gradient(to bottom,rgba(116, 116, 116,0.1),rgba(116, 116, 116,0.3),rgba(116, 116, 116,0.5));
+    
+    
+    width: 510px;
+    margin-right: 50px;
+    border-radius: 23px;
+    margin-top: 70px;
+    position: relative;
+    
+}
+
+.card3{
+    height: 530px;
+    background: linear-gradient(to bottom,rgba(116, 116, 116,0.25),rgba(116, 116, 116,0.275),rgba(116, 116, 116,0.3));
+    
+    
+    width: 510px;
+    margin-top: 70px;
+    border-radius: 23px;
+    position: relative;
+}
+
+.immagine-card{
+    width: 490px;
+    height: 510px;
+    object-fit: cover;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    margin-top:10px;
+    
+}
+
+.descizione-card{
+    width: 490px;
+    height: 170px;
+    background-color: rgba(0, 0, 0,0.15);
+    
+    position: absolute;
+    top: 10px;
+    left:10px;
+    border: none;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descrizione-card-principale{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 300;
+    font-family:  'Inter', sans-serif;
+    opacity: 1;
+    -webkit-text-stroke-color: rgba(0, 0, 0,0.5);
+    -webkit-text-stroke-width: 0.5px;
+    margin: 0;
+}
+
+.descrizione-card-secondaria{
+    color: rgb(230,230,230);
+    font-size: 15px;
+    -webkit-text-stroke-color: rgba(0, 0, 0,0.4);
+    -webkit-text-stroke-width: 0.5px;
+     margin-bottom: -50px;
+}

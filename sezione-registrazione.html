@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sezione registrazione</title>
+    <link rel="stylesheet" href="pagina-principale-navbar.css" />
+    <link rel="stylesheet" href="sezione-registrazione.css" />
+    <link rel="stylesheet" href="pagina-principale-footer.css" />
+    <script src="catalogo.js"></script>
+    <script src="sezione-registrazione.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat&family=Overpass:wght@700&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="tutto">
+    <nav id="nav">
+      <div id="figlio-navbar" class="figlio-nav">
+        <div class="padre-h1">
+          <h1 id="titolo">Presto</h1>
+        </div>
+        <div class="padre-div-right">
+          <div class="padre-h2">
+            <h2 id="ordini">I miei ordini</h2>
+          </div>
+          <div class="padre-cart-registrati">
+            <img
+              class="cart"
+              src="Immagini-icone/326700_cart_shopping_icon.png"
+              id="carrello"
+            />
+            <img
+              class="cart2"
+              src="Immagini-icone/851952_cart_512x512.png"
+              id="carrello2"
+            />
+
+            <button class="registrazione">Registrati</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="contenitore-sezione-registrazione-immagine">
+      <div id="contenitore-immagine">
+        <img
+          id="gioiello"
+          src="Immagini-icone/ring-with-patterns-3512006_1280.webp"
+        />
+      </div>
+      <div id="contenitore-sezione-registrazione">
+        <div id="contenitore-titolo">
+          <h2>Registrati qui</h2>
+        </div>
+
+        <div id="contenitore-dati-utente">
+          <div id="titolo-input">
+            <h3>Nome</h3>
+            <input id="nome-input" placeholder="Nome..." />
+          </div>
+          <div id="titolo-input">
+            <h3>Cogome</h3>
+            <input id="cognome-input" placeholder="Cogome..." />
+          </div>
+          <div id="titolo-input">
+            <h3>Email</h3>
+            <input id="email-input" placeholder="Email..." />
+          </div>
+          <div id="titolo-input">
+            <h3>Password</h3>
+            <input id="password-input" placeholder="Password..." />
+          </div>
+          <div id="contenitore-registrazione">
+            <button onclick="registrati()" class="registrazione-account">
+              Registrati
+            </button>
+          </div>
+          <p id="errore-dati">Email o password non corretti o non esistenti</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="foot">
+      <div class="informazioni" id="footinfo">
+        <p class="info" id="black">Contattaci</p>
+        <p class="info" id="black2">Faq</p>
+        <p class="info" id="black3">Privacy Policy</p>
+        <p class="info" id="black4">Lavora con noi</p>
+        <p class="info" id="black5">Cookie Policy</p>
+      </div>
+      <button onclick="lightmoderegistrazione()" class="light-button" id="luce">
+        Light mode
+      </button>
+      <button onclick="darkmoderegistrazione()" class="dark-button" id="ombra">
+        Dark mode
+      </button>
+    </footer>
+  </body>
+</html>

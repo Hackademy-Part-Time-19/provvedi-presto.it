@@ -1,0 +1,64 @@
+.sotto-nav{
+    width: 100vw;
+    background-color: #0f0f0f;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    z-index: 10;
+}
+
+.sezione-immagine{
+    width: 100vw;
+    position: relative;
+   
+    background-color: black;
+}
+
+.immagine-principale{
+    object-fit: cover;
+    width: 100vw;
+    
+    
+    
+}
+
+h3{
+  position: absolute;
+  bottom: 150px;
+  left: 510px;
+  font-size: 85px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.95;
+ -webkit-text-stroke-color: rgb(168, 168, 168);
+  -webkit-text-stroke-width: 1px;
+  
+}
+
+.h4-1{
+    position: absolute;
+    left: 600px;
+    bottom: 140px;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.85;
+   -webkit-text-stroke-color: rgb(168, 168, 168);
+    -webkit-text-stroke-width: 1px;
+}
+
+.h4-2{
+    position: absolute;
+    left: 800px;
+    bottom:80px;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.85;
+   -webkit-text-stroke-color: rgb(168, 168, 168);
+    -webkit-text-stroke-width: 1px;
+}
+

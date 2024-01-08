@@ -1,0 +1,55 @@
+#contenitore-prodottoscelto{
+    
+    display: flex;
+    
+    height: 80vh;
+    margin-left: 200px;
+    margin-right: 80px;
+    align-items: center;
+    
+    
+}
+
+#contenitore-immagine-prodottoscelto{
+    height: 70vh;
+    background-color: rgba(116, 116, 116,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30vw;
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+#contenitore-informazioni-prodottoscelto{
+    width: 40vw;
+    
+    height: 50vh;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titolo-prodottoscelto{
+ color: white;
+ font-size: 40px;
+}
+
+#paragrafo-prodottoscelto{
+ color:#cfcfcf;
+ font-size: 20px;
+}
+
+#prezzo-prodottoscelto{
+ color: white;
+ font-size: 20px;
+}
+
+.immagine-prodotto{
+    width: 530px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 25px;
+}

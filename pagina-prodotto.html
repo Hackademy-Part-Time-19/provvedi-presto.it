@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prodotto</title>
+    <link rel="stylesheet" href="pagina-principale-navbar.css" />
+    <link rel="stylesheet" href="catalogo.css" />
+    <link rel="stylesheet" href="pagina-principale-footer.css" />
+    <script src="catalogo.js"></script>
+    <script src="filtro.js"></script>
+    <link rel="stylesheet" href="pagina-prodotto.css" />
+  </head>
+  <body id="tutto">
+    <nav id="nav">
+      <div id="figlio-navbar" class="figlio-nav">
+        <div class="padre-h1">
+          <h1 id="titolo">Presto</h1>
+        </div>
+        <div class="padre-div-right">
+          <div class="padre-h2">
+            <h2 id="ordini">I miei ordini</h2>
+          </div>
+          <div class="padre-cart-registrati">
+            <img
+              class="cart"
+              src="Immagini-icone/326700_cart_shopping_icon.png"
+              id="carrello"
+            />
+            <img
+              class="cart2"
+              src="Immagini-icone/851952_cart_512x512.png"
+              id="carrello2"
+            />
+
+            <button class="registrazione">Registrati</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="contenitore-prodottoscelto">
+      <div id="contenitore-immagine-prodottoscelto">
+        <img id="imgprodotto" class="immagine-prodotto" />
+      </div>
+      <div id="contenitore-informazioni-prodottoscelto">
+        <div id="titolo-prodottoscelto">
+          <h2 id="titoloprodotto"></h2>
+        </div>
+        <div id="paragrafo-prodottoscelto">
+          <p id="descrizioneprodotto"></p>
+        </div>
+        <div id="prezzo-prodottoscelto">
+          <p id="prezzoprodotto"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="foot">
+      <div class="informazioni" id="footinfo">
+        <p class="info" id="black">Contattaci</p>
+        <p class="info" id="black2">Faq</p>
+        <p class="info" id="black3">Privacy Policy</p>
+        <p class="info" id="black4">Lavora con noi</p>
+        <p class="info" id="black5">Cookie Policy</p>
+      </div>
+      <button onclick="lightmode()" class="light-button" id="luce">
+        Light mode
+      </button>
+      <button onclick="darkmode()" class="dark-button" id="ombra">
+        Dark mode
+      </button>
+    </footer>
+  </body>
+</html>

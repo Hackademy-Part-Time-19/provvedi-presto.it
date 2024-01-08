@@ -1,0 +1,79 @@
+#contenitore-sezione-registrazione-immagine{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+}
+
+
+#gioiello{
+    height: 1000px;
+}
+
+#contenitore-sezione-registrazione{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenitore-titolo{
+    color: white;
+    font-size: 40px;
+}
+
+#contenitore-dati-utente{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#titolo-input{
+    
+    margin-bottom: 20px;
+    
+
+}
+
+input{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 8px 10px 8px;
+    outline: none;
+    background-color: rgb(135, 135, 135);
+    color: white;
+    
+}
+
+::placeholder{
+    color: white;
+}
+
+h3{
+    margin: 2px;
+    font-size: 13px;
+    color: white;
+}
+
+#contenitore-registrazione{
+    margin-top: 60px;
+    
+}
+
+.registrazione-account{
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom,rgb(0, 255, 0),black);
+    color: white;
+    border: none;
+    font-size: 30px;
+}
+
+#errore-dati{
+    color: red;
+    display: none;
+}

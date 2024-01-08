@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presto.it</title>
+    <link rel="stylesheet" href="pagina-principale-navbar.css" />
+    <link rel="stylesheet" href="pagina-principale-immagine.css" />
+    <link rel="stylesheet" href="pagina-principale-card.css" />
+    <link rel="stylesheet" href="pagina-principale-filtro.css" />
+    <link rel="stylesheet" href="pagina-principale-footer.css" />
+    <script src="pagina principale-cambiocolore.js"></script>
+    <script src="filtro.js"></script>
+    <script src="categorie.js"></script>
+    <script src="sezione-registrazione.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat&family=Overpass:wght@700&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="tutto">
+    <nav id="nav">
+      <div id="figlio-navbar" class="figlio-nav">
+        <div class="padre-h1">
+          <h1 id="titolo">Presto</h1>
+        </div>
+        <div class="padre-div-right">
+          <div class="padre-h2">
+            <h2 id="ordini">I miei ordini</h2>
+          </div>
+          <div class="padre-cart-registrati">
+            <img
+              class="cart"
+              src="Immagini-icone/326700_cart_shopping_icon.png"
+              id="carrello"
+            />
+            <img
+              class="cart2"
+              src="Immagini-icone/851952_cart_512x512.png"
+              id="carrello2"
+            />
+
+            <button onclick="vaiAregistrazione()" class="registrazione">
+              Registrati
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="sotto-navbar" class="sotto-nav"></div>
+
+    <div class="sezione-immagine" id="sottoimmagine">
+      <img
+        class="immagine-principale"
+        src="Immagini-icone/immagine principale.jpg"
+      />
+      <h3>La moda giusta per te</h3>
+      <div class="div-linear-gradient">
+        <h4 class="h4-1">I migliori prodotti al prezzo più conveniente</h4>
+        <h4 class="h4-2">inizia a cercare ora</h4>
+      </div>
+    </div>
+
+    <div class="div-filtro" id="filtrocolore">
+      <div class="filtro" id="filtro2">
+        <div class="filtro-cpn">
+          <p class="testo">categoria</p>
+          <div class="p-icon">
+            <select name="borse" id="inputCategoria" class="testo2">
+              <option value="borse">Borse</option>
+              <option value="men's clothing">Per lui</option>
+              <option value="women's clothing">Per lei</option>
+              <option value="occhiali">Occhiali</option>
+              <option value="collane">Collane</option>
+              <option value="jewelery">Gioielli</option>
+              <option value="cappelli">Cappelli</option>
+              <option value="smalti">Smalti</option>
+              <option value="cinture">Cinture</option>
+            </select>
+            <img class="icon" src="Immagini-icone/icons8-expand-arrow-48.png" />
+          </div>
+        </div>
+        <div class="filtro-cpn">
+          <p class="testo">prezzo</p>
+          <div class="p-icon">
+            <select id="inputPrezzo" class="testo2">
+              <option value="20-50">20-50</option>
+              <option value="50-100">50-100</option>
+              <option value="100-200">100-200</option>
+              <option value="200-300">200-300</option>
+              <option value="300-500">300-500</option>
+              <option value="500">500</option>
+            </select>
+            <img class="icon" src="Immagini-icone/icons8-expand-arrow-48.png" />
+          </div>
+        </div>
+        <div class="filtro-cpn">
+          <p class="testo">nome</p>
+          <div class="p-icon">
+            <input
+              placeholder="digita nome"
+              class="input-cerca-nome"
+              id="inputNome"
+            />
+          </div>
+        </div>
+      </div>
+      <div onclick="vaiAcatalogo()" class="cerca">
+        <button class="button-search">Cerca</button>
+      </div>
+    </div>
+
+    <div class="padre-cards" id="cardssfondobianco">
+      <div class="card">
+        <img
+          class="immagine-card"
+          src="Immagini-icone/vuitton-borse-633bgk-1.jpg"
+        />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">Le nostre borse</p>
+          <p class="descrizione-card-secondaria">ottima qualità</p>
+        </div>
+      </div>
+      <div onclick="vaiAcategoria(`men's clothing`)" class="card">
+        <img class="immagine-card" src="Immagini-icone/moda-uomo.webp" />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">Per lui</p>
+          <p class="descrizione-card-secondaria">scopri ogni vestuario</p>
+        </div>
+      </div>
+      <div onclick="vaiAcategoria(`women's clothing`)" class="card3">
+        <img class="immagine-card" src="Immagini-icone/donna-alla-moda.webp" />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">Per lei</p>
+          <p class="descrizione-card-secondaria">scopri ogni vestuario</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="immagine-card"
+          src="Immagini-icone/tendenze-occhiali-2023-1.png"
+        />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">I nostri occhiali</p>
+          <p class="descrizione-card-secondaria">lenti di qualità</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="immagine-card"
+          src="Immagini-icone/COLLANE_Natale23_M.jpg"
+        />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">Le nostre collane</p>
+          <p class="descrizione-card-secondaria">prodotti raffinati</p>
+        </div>
+      </div>
+      <div onclick="vaiAcategoria('jewelery')" class="card3">
+        <img class="immagine-card" src="Immagini-icone/gioielli-antichi.jpg" />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">I nostri gioielli</p>
+          <p class="descrizione-card-secondaria">prodotti di valore</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="immagine-card"
+          src="Immagini-icone/Florioli-eLUQLjAIMVk8ly9.jpeg"
+        />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">I nostri cappelli</p>
+          <p class="descrizione-card-secondaria">comodità assoluta</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="immagine-card"
+          src="Immagini-icone/615ebede5fb8e0eb2aecf46c.png"
+        />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">I nostri smalti</p>
+          <p class="descrizione-card-secondaria">effetto splendente</p>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="immagine-card"
+          src="Immagini-icone/cinta_valentino-copertina.jpg"
+        />
+        <div class="descizione-card">
+          <p class="descrizione-card-principale">Le nostre cinture</p>
+          <p class="descrizione-card-secondaria">alta compatibilità</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="foot">
+      <div class="informazioni" id="footinfo">
+        <p class="info" id="black">Contattaci</p>
+        <p class="info" id="black2">Faq</p>
+        <p class="info" id="black3">Privacy Policy</p>
+        <p class="info" id="black4">Lavora con noi</p>
+        <p class="info" id="black5">Cookie Policy</p>
+      </div>
+      <button onclick="lightmode()" class="light-button" id="luce">
+        Light mode
+      </button>
+      <button onclick="darkmode()" class="dark-button" id="ombra">
+        Dark mode
+      </button>
+    </footer>
+  </body>
+</html>
